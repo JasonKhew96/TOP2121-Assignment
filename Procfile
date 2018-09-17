@@ -1,0 +1,1 @@
+web: java -jar target/TOP2121-Assignment-1.0-SNAPSHOT.jar
