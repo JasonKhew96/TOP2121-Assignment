@@ -1,8 +1,8 @@
 (function() {
   "use strict"
 
-  let dataCacheName = 'travelData-v01'
-  let cacheName = 'travelPWA-alpha-01'
+  let dataCacheName = 'travelData-v02'
+  let cacheName = 'travelPWA-alpha-02'
   let filesToCache = [
     '/',
     'index.html',
