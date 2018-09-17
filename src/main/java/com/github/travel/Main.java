@@ -6,7 +6,7 @@ import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
-public class App {
+public class Main {
 
     private static void createTable() {
         Connection c;
