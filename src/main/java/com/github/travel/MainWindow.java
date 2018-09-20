@@ -23,12 +23,12 @@ import javax.swing.table.TableModel;
  *
  * @author User
  */
-public class mainWindow extends javax.swing.JFrame {
+public class MainWindow extends javax.swing.JFrame {
 
     /**
      * Creates new form NewJFrame
      */
-    public mainWindow() {
+    public MainWindow() {
         initComponents();
     }
 
@@ -393,9 +393,9 @@ public class mainWindow extends javax.swing.JFrame {
                 BufferedImage image = ImageIO.read(url);
                 jLabel1.setIcon(new ImageIcon(image));
             } catch (MalformedURLException ex) {
-                Logger.getLogger(mainWindow.class.getName()).log(Level.SEVERE, null, ex);
+                Logger.getLogger(MainWindow.class.getName()).log(Level.SEVERE, null, ex);
             } catch (IOException ex) {
-                Logger.getLogger(mainWindow.class.getName()).log(Level.SEVERE, null, ex);
+                Logger.getLogger(MainWindow.class.getName()).log(Level.SEVERE, null, ex);
             }
         }
     }//GEN-LAST:event_tableClickHandler
@@ -456,8 +456,10 @@ public class mainWindow extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException | InstantiationException | IllegalAccessException | javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(mainWindow.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(MainWindow.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
+        //</editor-fold>
         //</editor-fold>
         //</editor-fold>
 
@@ -465,7 +467,7 @@ public class mainWindow extends javax.swing.JFrame {
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(() -> {
-            new mainWindow().setVisible(true);
+            new MainWindow().setVisible(true);
         });
     }
 
