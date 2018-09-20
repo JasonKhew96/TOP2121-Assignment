@@ -1,16 +1,50 @@
 package com.github.travel;
 
-import java.util.List;
-
 public class Guide {
 
-    private List<Items> items;
+    private String img;
+    private String title;
+    private String intro;
+    private String content;
+    private int id;
 
-    public List<Items> getItems() {
-        return items;
+    public String getContent() {
+        return content;
     }
 
-    public void setItems(List<Items> items) {
-        this.items = items;
+    public void setContent(String content) {
+        this.content = content;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public String getImg() {
+        return img;
+    }
+
+    public void setImg(String img) {
+        this.img = img;
+    }
+
+    public String getIntro() {
+        return intro;
+    }
+
+    public void setIntro(String intro) {
+        this.intro = intro;
     }
 }
