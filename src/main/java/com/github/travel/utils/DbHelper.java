@@ -1,10 +1,6 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package com.github.travel;
+package com.github.travel.utils;
 
+import com.github.travel.entity.Guide;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
@@ -13,10 +9,6 @@ import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- *
- * @author User
- */
 public class DbHelper {
 
     public static void createTable() {
@@ -75,7 +67,7 @@ public class DbHelper {
             System.exit(0);
         }
     }
-    
+
     public static int addTable(Guide guide) {
         Connection c;
         Statement stmt;
@@ -89,7 +81,7 @@ public class DbHelper {
             String image = guide.getImg();
             String intro = guide.getIntro();
             String content = guide.getContent();
-            
+
             stmt = c.createStatement();
             String sql = "INSERT INTO GUIDE (TITLE, IMAGE, INTRO, CONTENT) "
                     + "VALUES ('" + title + "', '" + image + "', '" + intro + "', '" + content + "');";
@@ -130,7 +122,7 @@ public class DbHelper {
             System.exit(0);
         }
     }
-    
+
     public static void deleteTable(String id) {
         Connection c;
         Statement stmt;
@@ -248,8 +240,4 @@ public class DbHelper {
             System.exit(0);
         }
     }
-//    
-//    public static void main(String[] args) {
-//        populateTable();
-//    }
 }

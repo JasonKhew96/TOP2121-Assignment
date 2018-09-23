@@ -1,4 +1,4 @@
-package com.github.travel;
+package com.github.travel.entity;
 
 public class Guide {
 
